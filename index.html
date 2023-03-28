@@ -10,36 +10,45 @@
 </head>
 
 <body>
+    <!-- display header -->
     <header class="mt-8 mb-6">
         <h1 class="text-center justify-center font-bold text-4xl text-emerald-400">Money counting</h1>
     </header>
     <main class="container mx-auto p-10 mt-10 ">
         <section class="grid lg:flex md:grid md:grid-cols-1  gap-14">
+            <!-- image site  -->
             <div>
                 <img class="h-full sm:w-full" src="images/money-count.jpg" alt="" srcset="">
             </div>
+            <!-- main section site -->
             <div class="bg-stone-300 p-5">
                 <div class="text-center">
+                    <!-- income site -->
                     <h3 class="text-3xl font-semibold mb-6">Income</h3>
+                    <!-- income item input site -->
                     <div class="flex mb-6 lg:flex md:grid md:grid-clos-1 sm:grid sm:grid-clos-1">
                         <label class="w-2/6 font-semibold text-2xl mt-2 sm:justify-center sm:mb-3 sm:mx-auto" for="income">Income :</label>
                         <div class="">
                             <input type="text" class="border border-2 border-slate-400 py-3 px-4 w-96 font-bold text-lg" id="income" placeholder="income amount">
                         </div>
                     </div>
+                    <!-- expense started to this -->
                     <h3 class="text-3xl font-semibold mb-6 sm:justify-center">Expenses</h3>
+                    <!-- food item site -->
                     <div class="flex mb-6 lg:flex md:grid md:grid-clos-1 sm:grid sm:grid-clos-1">
                         <label class="w-2/6 font-semibold text-2xl mt-2 sm:mb-3 sm:mx-auto" for="Food">Food :</label>
                         <div class="">
                             <input type="text" class="border border-2 border-slate-400 py-3 px-4 w-96 font-bold text-lg" id="food" placeholder="food Cost">
                         </div>
                     </div>
+                    <!-- rent item site -->
                     <div class="flex mb-6 lg:flex md:grid md:grid-clos-1 sm:grid sm:grid-clos-1">
                         <label class="w-2/6 font-semibold text-2xl mt-2 sm:justify-center sm:mb-3 sm:mx-auto" for="rent">Rent :</label>
                         <div class="">
                             <input type="text" class="border border-2 border-slate-400 py-3 px-4 w-96 font-bold text-lg" id="rent" placeholder="rent Cost">
                         </div>
                     </div>
+                    <!-- clothes item site -->
                     <div class="flex mb-6 lg:flex md:grid md:grid-clos-1 sm:grid sm:grid-clos-1">
                         <label class="w-2/6 font-semibold text-2xl mt-2 sm:justify-center sm:mb-3 sm:mx-auto" for="clothes">Clothes :</label>
                         <div class="">
@@ -47,22 +56,28 @@
                                 id="clothes" placeholder="clothes Cost">
                         </div>
                     </div>
+                    <!-- calculate button to this -->
                     <button id="calculate-btn"
                         class="bg-sky-500 text-xl font-semibold text-white px-9 py-3 rounded-md">Calculate</button>
+                        <!-- this is display showup balance -->
                     <div class="my-4">
                         <h2 class="text-3xl font-semibold my-3">Total Expense : <span id="total-expense">00</span></h2>
                         <h2 class="text-3xl font-semibold my-3">Balance : <span id="balance">00</span></h2>
                     </div>
+                    <!-- saving site area  -->
                     <div class="flex justify-center lg:flex md:grid md:grid-clos-1 sm:grid sm:grid-clos-1 ">
+                        <!-- save input filed  -->
                         <div class="sm:mb-3">
                             <label for="save" class="text-xl font-semibold my-3 mr-3">Save : </label>
                             <input id="save" type="text" class="border border-2 border-slate-400 py-3 px-4 font-bold text-lg" placeholder="save percent">
                         </div>
+                        <!-- save button to this -->
                         <div class="flex mx-3 sm:justify-center">
                             <h4 class="font-bold text-lg mr-3 mt-3">%</h4>
                             <button id="save-btn" class="bg-sky-500 text-xl font-semibold text-white px-12 py-2 rounded-md">Save</button>
                         </div>
                     </div>
+                    <!---- save and then total balance showup this site  ---->
                     <div class="my-4">
                         <h2 class="text-3xl font-semibold my-3">Saving Amount : <span id="saving-amount">00</span></h2>
                         <h2 class="text-3xl font-semibold my-3">Remaining Balance : <span id="remaining-balance">00<span><h2>
