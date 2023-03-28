@@ -15,14 +15,11 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const income = getElement('income')
     // expense item adding
     // food is add ----
-    // const foodCost = document.getElementById('food').value;
     const food = getElement('food');
     // rent is add ---
-    const rentCost = document.getElementById('rent').value;
-    const rent = parseInt(rentCost);
+    const rent = getElement('rent');
     // clothes is add ---
-    const clothesCost = document.getElementById('clothes').value;
-    const clothes = parseInt(clothesCost);
+    const clothes = getElement('clothes');
     // condition applied ---
     if (
         income < 0 ||
@@ -41,19 +38,16 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const expenses = food + rent + clothes;
     const balance = income - expenses;
     // total balance display add ---
-    const totalExpenses = document.getElementById('total-expense');
-    totalExpenses.innerText = expenses;
-    // const totalBalance = document.getElementById('balance');
-    // totalBalance.innerText = balance;
+    valueDisplay('total-expense', expenses)
     valueDisplay('balance', balance)
 })
 
 // saving button site making -----
 document.getElementById('save-btn').addEventListener('click', function () {
     // income input ---
-    const income = document.getElementById('income').value;
+    const income = getElement('income');
     // save input ---
-    const save = document.getElementById('save').value;
+    const save = getElement('save');
     // save percentage site ---
     const saveAmount = (save / 100) * income;
     // get balance amount ---
